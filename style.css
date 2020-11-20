@@ -1,0 +1,47 @@
+:root {
+  --cyan: hsl(185, 75%, 39%);
+  --blue: hsl(229, 23%, 23%);
+  --grayishBlue: hsl(227, 10%, 46%);
+  --gray: hsl(0, 0%, 59%);
+}
+
+* {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  background-color: var(--cyan);
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-position: right 180px top -400px, left 170px bottom -380px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  box-sizing: border-box;
+  background-color: white;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 50vh;
+  overflow: hidden;
+  width: 350px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  display: flex;
+}
+
+.card-inner-top {
+  position: relative;
+  background: url(../images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40%;
+  width: 100%;
+}
